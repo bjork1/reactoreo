@@ -20,6 +20,7 @@ import {
   return (
     <Router>
       <div>
+        
 
         <NavTabs></NavTabs>
 
@@ -51,6 +52,7 @@ import {
             <Home />
           </Route>
         </Switch>
+    
       </div>
     </Router>
   );

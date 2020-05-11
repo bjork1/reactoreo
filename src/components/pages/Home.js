@@ -1,17 +1,52 @@
+//import React from "react";
+import Title from "../Title";
+
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import Test from "./Test";
+import Covid from "./Covid";
 
 function About() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui
-        mauris, ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus
-        porta. Nam quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam
-        semper imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed
-        rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+<Router>
+      <div className= "row">
+      <div className = "col s12 m2">
+          <Title></Title>
+        
+
+          </div>
+          <div className="row col s12 m8">
+
+        <Switch>
+          <Route path="/test">
+            <Test />
+          </Route>
+          <Route path="/covid">
+            <Covid />
+          </Route>
+          
+          
+        </Switch>
+        </div>
+      </div>
+    </Router>
+
+
+
+    //   <div className = "row">
+    //     <Title></Title>  
+    
+    //   <div className="col s12 m9">
+    //   <p>Hello</p>
+    // </div>
+    // </div>
+
+
   );
 }
 
