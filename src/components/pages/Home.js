@@ -10,6 +10,12 @@ import {
 
 import Test from "./Test";
 import Covid from "./Covid";
+import Weather from "./Weather";
+import Notes from "./Notes";
+
+import Skills from "./Skills";
+import Port from "./Port";
+
 
 function About() {
   return (
@@ -28,6 +34,18 @@ function About() {
           </Route>
           <Route path="/covid">
             <Covid />
+          </Route>
+          <Route path="/weather">
+            <Weather />
+          </Route>
+          <Route path="/notes">
+            <Notes />
+          </Route>
+          <Route path="/skills">
+            <Skills />
+          </Route>
+          <Route path="/port">
+            <Port />
           </Route>
           
           
