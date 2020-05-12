@@ -2,10 +2,27 @@ import React from "react";
 import portfolio from './portfolio.jpg';
 import nebraska from './nebraska.jpg';
 
+
+
 function Connect() {
   return (
+<div className = "container">
+<div className="row">
+<div class="card">
+
+<div class="card-content">
+  <span class="card-title activator grey-text text-darken-4">Contact Info<i class="material-icons right">more_vert</i></span>
+  <p><a href="#">This is a link</a></p>
+</div>
+<div class="card-reveal">
+  <span class="card-title grey-text text-darken-4">Phone and Email<i class="material-icons right">close</i></span>
+  <p>651-233-6987 and bjorkandrew1@gmail.com</p>
+</div>
+
+</div>
 
 
+</div>
     <div className="row">
     <div className="col s12 m6">
       <div className="card">
@@ -37,6 +54,8 @@ function Connect() {
         </div>
       </div>
     </div>
+  </div>
+  
   </div>
  
    
