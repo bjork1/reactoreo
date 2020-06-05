@@ -12,9 +12,9 @@ function NavTabs() {
 
     <nav>
     <div className="nav-wrapper">
-      <a href="#!" className="brand-logo center">Reactoreo</a>
+   
       <ul className="left">
-        <li>  <Link to="/">Projects</Link>
+        <li>  <Link to="/">Home</Link>
             
             {/* <a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a> */}
             

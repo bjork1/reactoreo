@@ -7,7 +7,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-
+import Audio from "./Audio";
 import Test from "./Test";
 import Covid from "./Covid";
 import Weather from "./Weather";
@@ -15,6 +15,7 @@ import Notes from "./Notes";
 
 import Skills from "./Skills";
 import Port from "./Port";
+import Main from "./Main";
 
 
 function About() {
@@ -22,13 +23,19 @@ function About() {
 <Router>
       <div className= "row">
       <div className = "col s12 m2">
-          <Title></Title>
+         
         
 
           </div>
           <div className="row col s12 m8">
 
         <Switch>
+        <Route path="/" exact>
+            <Main />
+          </Route>
+        <Route path="/audio">
+            <Audio />
+          </Route>
           <Route path="/test">
             <Test />
           </Route>

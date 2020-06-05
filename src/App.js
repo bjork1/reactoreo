@@ -1,9 +1,19 @@
 //import React from "react";
 //import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import NavTabs from "./components/NavTabs";
-import Home from "./components/pages/Home";
-import Connect from "./components/pages/Connect";
+
+import Main from "./components/pages/Main";
+import Title from "./components/Title/index";
+import Covid from "./components/pages/Covid";
+import Audio from "./components/pages/Audio";
+import Skills from "./components/pages/Skills";
+import Notes from "./components/pages/Notes";
+import Employee from "./components/pages/Port";
+import Quiz from "./components/pages/Test";
+import Weather from "./components/pages/Weather";
+
+
+
 
 
 import React from "react";
@@ -18,14 +28,53 @@ import {
 
  function App() {
   return (
-    <Router>
-      <div>
+  <Router>
+      <div className = "App-header">
         
-
-        <NavTabs></NavTabs>
-
+<div className = "row">
 
 
+  <div className = "col sm5">
+     <Title></Title>
+     </div>
+
+
+     <div className = "col s7 space">
+<Switch>
+  <Route path = "/" exact>
+<Main/>
+
+  </Route>
+  <Route path = "/covid" exact>
+<Covid/>
+
+  </Route>
+  <Route path = "/audio" exact>
+<Audio/>
+
+  </Route>
+  <Route path = "/skills" exact>
+<Skills/>
+
+  </Route>
+  <Route path = "/notes" exact>
+<Notes/>
+
+  </Route>
+  <Route path = "/employee" exact>
+<Employee/>
+
+  </Route>
+  <Route path = "/quiz" exact>
+<Quiz/>
+
+  </Route>
+  <Route path = "/weather" exact>
+<Weather/>
+
+  </Route>
+</Switch>
+</div>
 
         {/* <nav>
           <ul>
@@ -43,18 +92,13 @@ import {
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/connect">
-            <Connect />
-          </Route>
-          
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-    
+       
+
+
+      
+       </div>
       </div>
-    </Router>
+      </Router>
   );
 }
 
