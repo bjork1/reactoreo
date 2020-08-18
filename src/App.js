@@ -11,8 +11,8 @@ import Notes from "./components/pages/Notes";
 import Employee from "./components/pages/Port";
 import Quiz from "./components/pages/Test";
 import Weather from "./components/pages/Weather";
-
-
+import Nav from "./components/pages/Nav";
+import Connect from "./components/pages/Info";
 
 
 
@@ -28,9 +28,11 @@ import {
 
  function App() {
   return (
+
+    
   <Router>
       <div className = "App-header">
-        
+      <Nav></Nav>
 <div className = "row">
 
 
@@ -44,6 +46,11 @@ import {
   <Route path = "/" exact>
 <Main/>
 
+  </Route>
+
+
+  <Route path = "/connect" exact>
+    <Connect/>
   </Route>
   <Route path = "/covid" exact>
 <Covid/>
