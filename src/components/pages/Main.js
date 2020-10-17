@@ -59,11 +59,10 @@ jQueryCode = () => {
 
 
 
+<div className = "desktopShow">
 
 
 
-
-{/* <img src = {mountain} style = {{height:'80vh', opacity: '80%'}}/> */}
 
 <div className="carousel"  >
     <a className="carousel-item modal-trigger" href="#modal1" ><img src = {audiopic} style = {{width: '280% ', marginLeft: '-70%'}}/></a>
@@ -74,6 +73,11 @@ jQueryCode = () => {
     <a className="carousel-item modal-trigger" href="#modal6"><img src = {employee} style = {{width: '300% ', marginLeft: '-80%'}}/></a>
     <a className="carousel-item modal-trigger" href="#modal7"><img src = {weather} style = {{width: '300% ', marginLeft: '-80%'}}/></a>
   
+  </div>
+
+  <div>
+    
+    <h4 style = {{textAlign: 'bottom'}}>Click to view more</h4>
   </div>
 
 
@@ -178,7 +182,181 @@ The code in this application is HTML, CSS, and Jquery. This project was complete
     </div>
   </div>
 
+  </div>
 
+  <div className = "mobileShow">
+{/* mobile audio */}
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {audiopic}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>AudioMind Application</span>
+          <p>Registered users will find this app to be a useful platform for collaborating on works by providing a platform for sharing tracks between users and providing the user with an outlet for communication. Collaberations include a chat area and a contributers tab including users who added to the project.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://audio-mind2.herokuapp.com/" target = "_blank">View App</a>
+          <a href="https://github.com/brakluner/AudioMind" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {/*mobile skills */}
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {skills}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>Sllik Skills</span>
+          <p>This application is a search engine and resource for people who want to learn new skills.
+
+The user goes to the application because they want to research how to learn a new skill, such as cooking, coding, or carpentry.
+
+The application is currently in the development phase and will be released in five phases. Each phase will be a viable product that is incrementally more complex and detailed towards helping the user to achieve the end goal.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://bjork1.github.io/SkillLearningApp/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/SkillLearningApp" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   {/*mobile covid */}
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img img src = {covid}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>Covid-19 App</span>
+          <p>The world as we know it is changing and daily life is being altered. Ever since February 2020 chaos has erupted because of the Covid-19 Pandemic.
+
+This application will provide the user with real-time data on how the coronavirus is affecting certain locations, and a place to find and post updates on resources in the area. Want to know which stores are open? Do you have extra soup to share with a neighbor in need? Please share this information on the website and post it to the comments. This project uses handlebars, ORM structure with routes using get and post, a MySQL database, Travis CI for testing and improvements, a coronavirus API, and a server using node and express.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://covid19-application.herokuapp.com/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/covid-19" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {/*mobile notes */}
+
+
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {notes}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>Note Taker App</span>
+          <p>This application uses HTML, CSS, jQuery and Bootstrap. It is a tool for taking notes and storing tasks based off of those notes.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://bjork1.github.io/flow/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/flow" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   {/*mobile quiz */}
+  
+
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {quizapp}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>Capitals Quiz App</span>
+          <p>The quiz has 5 multiple choice questions, along with a timer. If you guess incorrectly, the time will decrease by 15 seconds. The faster you guess, the higher your score will be. If you are able to get all right, you may have the chance to see your score amongst the High Scores.</p>
+        </div>
+        <div className="card-action">
+          <a href="https://bjork1.github.io/quiz/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/quiz" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   {/*mobile employee */}
+  
+
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {employee}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}> Employee Table</span>
+          <p>Welcome to the Emloyee Directory. You can search by employees from a variety of categories, such as name, email, birthday, and phone. Each employee includes a photo, and the information is currently stored in a JSON file and was originally retreived from https://randomuser.me. Future developments will include the data being randomly drawn from the website every time the page is accessed.
+
+There are 15 employees in the JSON file to sort and filter from. Categories can be sorted alphabetically or numerically, and can also be filtered by typing in the letters or numbers into the input field. Gender has a select option that filters the data.
+
+The application uses ReactJS, Bootstrap, and has the react-bootstrap-table package installed</p>
+        </div>
+        <div className="card-action">
+          <a href="https://findtheemployee.herokuapp.com/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/react-employee" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/*mobile weather */}
+
+
+
+
+
+  <div className="row">
+    <div className="col s12 m12">
+      <div className="card">
+        <div className="card-image">
+          <img src = {weather}/>
+          
+        </div>
+        <div className="card-content">
+          <span style = {{fontSize: '24px'}}>Weather App</span>
+          <p>This is a weather application to allow the user versatile search functionality to find key weather information for the current day and also presented as a five day forecast.
+
+The application uses the Open Weather Map API and can search for the weather information for any city in the world with the search bar. In addition, key US cities are included below the search bar, which can be clicked on for easy reference to the data for these popular cities. API data from Open Weather is for Current, Five Day Forecast, and Icons. The Moment.js API is also used in this application for referencing the dates.
+
+The code in this application is HTML, CSS, and Jquery. This project was completed on 2/1/2020</p>
+        </div>
+        <div className="card-action">
+          <a href="https://bjork1.github.io/weather/" target = "_blank">View App</a>
+          <a href="https://github.com/bjork1/weather" target = "_blank">View Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  {/* <div className="carousel"  >
+    <a className="carousel-item modal-trigger" href="#modal7"><img  style = {{width: '300% ', marginLeft: '-80%'}}/></a>
+  
+  </div> */}
 
   </div>
 

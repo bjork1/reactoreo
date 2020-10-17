@@ -11,3 +11,30 @@
     font-weight: bold;
 font-size: 18px;
 }
+
+
+@media screen and (min-width: 993px) {
+    .mobileShow {
+      display: none;
+  }
+  
+    .desktopShow {
+      display: block;
+    }
+   
+   
+  
+  }
+
+  @media screen and (max-width: 992px) {
+    .mobileHide {
+      display: none;
+    }
+    .desktopShow {
+      display: none;
+    }
+    .mobileShow {
+      display: block;
+  }
+
+}
