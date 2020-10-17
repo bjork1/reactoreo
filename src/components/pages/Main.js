@@ -3,7 +3,8 @@ import link from "./linkpic.jpg";
 import "./main.css";
 import mountain from "./mountain.jpg";
 import M from "materialize-css";
-
+//import next from 'materialize-css';
+import next from 'materialize-css';
 import options from "materialize-css";
 import audiopic from './audiopic.PNG';
 import covid from './covid.PNG';
@@ -12,9 +13,16 @@ import weather from './weather.PNG';
 import quizapp from './quizapp.PNG';
 import skills from './skills.PNG';
 import notes from './notes.PNG';
+//import $ from 'jQuery';
 
-
-
+// $('.carousel').carousel({
+//   padding: 200    
+// });
+// autoplay();
+// function autoplay() {
+//   $('.carousel').carousel('next');
+//   setTimeout(autoplay, 4500);
+// }
 
 export default class Main extends React.Component {
 
@@ -23,8 +31,12 @@ jQueryCode = () => {
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.carousel');
     var elemss = document.querySelectorAll('.modal');
+    var options = ({duration : '400', setTimeout: '4500'});
     var instances = M.Carousel.init(elems, options);
     var instancess = M.Modal.init(elemss, options);
+    setInterval(()=>{
+      M.Carousel.getInstance(elems[0]).next();
+   },3000);
   });
 
 }
@@ -32,6 +44,7 @@ jQueryCode = () => {
 
   componentDidMount() {
     this.jQueryCode();
+    
     
   }
 
