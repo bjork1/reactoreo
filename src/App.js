@@ -36,12 +36,12 @@ import {
 <div className = "row">
 
 
-  <div className = "col sm5">
+  {/* <div className = "col sm5">
      <Title></Title>
-     </div>
+     </div> */}
 
 
-     <div className = "col s7 space">
+     <div>
 <Switch>
   <Route path = "/" exact>
 <Main/>
