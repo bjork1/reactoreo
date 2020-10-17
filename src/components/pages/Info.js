@@ -3,14 +3,14 @@ import link from "./andrew.jpg";
 
 function Info() {
   return (
-<div >
+<div style = {{height: '90vh'}}>
     
  <div className= "row">
  
  <div className = "col s5">
 
 
- <table className = "striped" style = {{padding: '15px', border : '1px solid #E0E0E2', marginLeft: '50px'}}>
+ <table className = "striped" style = {{marginLeft: '15%', width: '80%', padding: '15px', border : '1px solid #E0E0E2', marginTop: '10%'}}>
         <thead>
           <tr>
               <th>Contact</th>
@@ -44,10 +44,10 @@ function Info() {
 
    
   
-      <div class="card " style = {{width: '400px', marginTop: '50px', backgroundColor: '#FA9F42'}}>
-        <div class="card-content white-text">
-          <span class="card-title">Summary</span>
-          <p>Agile business professional with specialties in troubleshooting, marketing, and web development. Holds certifications in Full Stack Web Development and ScrumMaster, and a Bachelor’s degree in Business Administration. </p>
+      <div className="card " style = {{width: '400px', marginTop: '15%', backgroundColor: '#FBFCFF', marginLeft: '15%', width: '80%'}}>
+        <div className="card-content">
+          <span className="card-title">Summary</span>
+          <p style = {{fontSize: '18px'}}>Agile business professional with specialties in troubleshooting, marketing, and web development. Holds certifications in Full Stack Web Development and ScrumMaster, and a Bachelor’s degree in Business Administration. </p>
         </div>
         {/* <div class="card-action">
           <a href="#">This is a link</a>
@@ -62,50 +62,22 @@ function Info() {
  
   
         </div>
-        <div className = "col s3"></div>
+       
         <div className = "col s4" >
         
-      <div class="card" style = {{textAlign: 'center', left:'50%'}}>
-        <div class="card-image">
+      <div className="card" style = {{textAlign: 'center', left:'50%', marginTop: '10%', marginBottom: '10%', width: '70%'}}>
+        <div className="card-image">
           <img src={link}/>
        
-          <a href="https://www.linkedin.com/in/bjorkandrew/" target = "_blank" class="btn-floating halfway-fab waves-effect waves-light btn-floating btn-large pulse" style = {{backgroundColor: '#3E78B2'}}><i class="material-icons">add</i></a>
+          <a href="https://www.linkedin.com/in/bjorkandrew/" target = "_blank" className="btn-floating halfway-fab waves-effect waves-light btn-floating btn-large pulse" style = {{backgroundColor: '#3E78B2'}}><i class="material-icons">add</i></a>
         </div>
-        <div class="card-content">
+        <div className="card-content">
           <p style = {{marginTop: '20px'}}>Let's connect on LinkedIn.</p>
        
     </div>
   </div>
 
-  <table className = "centered">
-        <thead>
-          <tr>
-              <th></th>
-              <th>Web</th>
-              <th>Dev</th>
-              <th>Skills</th>
-              <th></th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>ReactJS</td>
-            <td>jQuery</td>
-            <td>Node</td>
-            <td>Materialize</td>
-            <td>AWS</td>
-          </tr>
-          <tr>
-            <td>Express</td>
-            <td>MongoDB</td>
-            <td>MySQL</td>
-            <td>Bootstrap</td>
-            <td>NextJS</td>
-          </tr>
-          
-        </tbody>
-      </table>
+  
     
   
 

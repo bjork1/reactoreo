@@ -77,7 +77,7 @@ jQueryCode = () => {
 
   <div>
     
-    <h4 style = {{textAlign: 'bottom'}}>Click to view more</h4>
+    {/* <h4 style = {{textAlign: 'bottom'}}>Click to view more</h4> */}
   </div>
 
 
