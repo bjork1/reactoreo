@@ -43,10 +43,11 @@ import {
 
      <div>
 <Switch>
-  <Route path = "/" exact>
+<Route path = "/" exact>
 <Main/>
 
   </Route>
+  
 
 
   <Route path = "/connect" exact>

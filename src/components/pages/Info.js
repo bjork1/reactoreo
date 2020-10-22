@@ -1,12 +1,32 @@
 import React from "react";
 import link from "./andrew.jpg";
+import pdf from './Andrew_Bjork_Resume.pdf';
+import axios from 'axios';
 
-function Info() {
+class Info extends React.Component {
+  state = {
+    persons: []
+  }
+
+  componentDidMount() {
+    axios.get(`https://api.github.com/users/bjork1/repos`)
+    //axios.get(`https://api.github.com/users/bjork1`)
+      .then(res => {
+        const persons = res.data;
+        this.setState({ persons });
+      })
+  }
+
+  render() {
+    console.log(this.state.persons);
   return (
-<div style = {{height: '90vh'}}>
+<div style = {{height: '90 vh'}}>
     
  <div className= "row">
- 
+ <div>
+    {/* <h1>Hello, {this.state.persons.company} </h1> */}
+  
+  </div>
  <div className = "col s5">
 
 
@@ -35,7 +55,13 @@ function Info() {
           </tr>
           <tr>
             <td>Github</td>
-            <td><a href="https://github.com/bjork1" target = "_blank" class="waves-effect waves-light btn" style = {{backgroundColor: '#3E78B2'}}>Follow</a></td>
+            <td><a href="https://github.com/bjork1" target = "_blank" className="waves-effect waves-light btn" style = {{backgroundColor: '#3E78B2'}}>Follow</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Resume</td>
+            <td><a href={pdf}
+                    download className="waves-effect waves-light btn" style = {{backgroundColor: '#3E78B2'}}>Download</a></td>
             <td></td>
           </tr>
         </tbody>
@@ -84,6 +110,52 @@ function Info() {
         </div>
         
         </div>
+
+        <div className = "row">
+
+          <div className = "col s5">
+
+          </div>
+          <div className = "col s4">
+          <table className = "striped" style = {{marginLeft: '15%', width: '80%', padding: '15px', border : '1px solid #E0E0E2', marginTop: '10%'}}>
+        <thead>
+          <tr>
+              <th>Contact</th>
+              <th>Me</th>
+              
+            <td></td>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Phone</td>
+            <td>651-233-6987</td>
+            <td></td>
+            
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>bjorkandrew1@gmail.com</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Github</td>
+            <td><a href="https://github.com/bjork1" target = "_blank" className="waves-effect waves-light btn" style = {{backgroundColor: '#3E78B2'}}>Follow</a></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Resume</td>
+            <td><a href={pdf}
+                    download className="waves-effect waves-light btn" style = {{backgroundColor: '#3E78B2'}}>Download</a></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+            </div>
+        </div>
+
         
        
   </div>
@@ -91,6 +163,6 @@ function Info() {
     
    
   );
-}
+}}
 
 export default Info;

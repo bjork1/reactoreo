@@ -1,13 +1,36 @@
 import React from "react";
 import portfolio from './portfolio.jpg';
 import nebraska from './nebraska.jpg';
+import axios from 'axios';
 
 
 
-function Connect() {
+class Connect extends React.Component {
+  state = {
+    persons: []
+  }
+
+  componentDidMount() {
+    axios.get(`https://api.github.com/users/${answers.username}`)
+      .then(res => {
+        const persons = res.data;
+        this.setState({ persons });
+      })
+  }
+
+  render() {
+   
+  
   return (
 <div className = "container">
+  
 <div className="row">
+  <div>
+    <h1>Words </h1>
+  <ul>
+        { this.state.persons.map(data => <li>{data.followers}</li>)}
+      </ul>
+  </div>
 <div class="card">
 
 <div class="card-content">
@@ -60,6 +83,6 @@ function Connect() {
  
    
   );
-}
+}}
 
 export default Connect;
