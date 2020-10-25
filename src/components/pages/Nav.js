@@ -51,20 +51,18 @@ handleConnectClick() {
       }
      
         return(
-    <nav style = {{height: '80px'}}>
+    <nav style = {{height: '25px', backgroundColor: "rgba(62, 120, 178, .45)", position: 'fixed'}}>
       {/* <h2>Button Toggle: {this.state.buttonState.toString()}</h2>  */}
     <div className="nav-wrapper color">
-      <a href="/" className="brand-logo" style = {{marginLeft: '20px'}}>Andrew's Profile</a>
-      <ul id="nav-mobile" className="right hide-on-med-and-down">
+      {/* <a href="/" className="brand-logo" style = {{marginLeft: '20px'}}>Andrew's Profile</a> */}
+      {/* <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li style = {{marginRight: '30px'}}>
           <p isLoggedIn = {isLoggedIn} />
        {button}
-        {/* <Link to="/connect" onClick={this.toggleState}>
-            <a >Hello</a>
-            </Link> */}
+      
             </li>
         
-      </ul>
+      </ul> */}
     </div>
   </nav>
 
