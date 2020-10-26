@@ -13,7 +13,7 @@ font-size: 18px;
 }
 
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 815px) {
     .mobileShow {
       display: none;
   }
@@ -26,10 +26,8 @@ font-size: 18px;
   
   }
 
-  @media screen and (max-width: 992px) {
-    .mobileHide {
-      display: none;
-    }
+  @media screen and (max-width: 814px) {
+    
     .desktopShow {
       display: none;
     }
